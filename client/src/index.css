@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tektur:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+@import "tailwindcss";
+
+
+:root {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+@theme {
+    --font-lite: 'Tektur';
+}
+
+@layer components {
+    .animate-fast-extended {
+        animation: fastExtended 700ms linear infinite;
+        /* Faster speed */
+    }
+
+    @keyframes fastExtended {
+        0% {
+            background-position: 100% 0%;
+        }
+
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #f1f5f9;
+}
+
+/* For Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #3b82f6;
+    border-radius: 10px;
+    border: 2px solid #f1f5f9;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #2563eb;
+}
+.mostleft{
+    background: conic-gradient(rgb(25, 25, 255), rgb(0, 183, 255), rgb(255, 255, 255), blue);
+}
+/* .mostleftr{
+    background: conic-gradient(blue, rgb(255, 255, 255), rgb(0, 183, 255), rgb(25, 25, 255));
+} */
